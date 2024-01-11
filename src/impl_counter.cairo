@@ -47,10 +47,7 @@ mod test {
     use starknet::ContractAddress;
     use starknet::contract_address::contract_address_const;
     use array::ArrayTrait;
-    use snforge_std::{declare, ContractClassTrait, fs::{FileTrait, read_txt}};
-    use snforge_std::{start_prank, stop_prank, CheatTarget};
-    use snforge_std::PrintTrait;
-    use traits::{Into, TryInto};
+    use snforge_std::{declare, ContractClassTrait};
 
     // helper function
     fn deploy_contract() -> ContractAddress {
